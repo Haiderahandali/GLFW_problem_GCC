@@ -1,0 +1,705 @@
+[1/126] /usr/local/Cellar/cmake/3.18.1/bin/cmake -E copy ../deps/glfw/examples/glfw.icns deps/glfw/examples/simple.app/Contents/Resources/glfw.icns
+[2/126] /usr/local/bin/G++-10  -I../deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -MD -MT CMakeFiles/myapp.dir/src/main.cpp.o -MF CMakeFiles/myapp.dir/src/main.cpp.o.d -o CMakeFiles/myapp.dir/src/main.cpp.o -c ../src/main.cpp
+[3/126] /usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o -c ../deps/glfw/src/vulkan.c
+FAILED: deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o 
+/usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o -c ../deps/glfw/src/vulkan.c
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/AuthSession.h:32,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h:42,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/CSIdentity.h:43,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/OSServices.h:29,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/IconsCore.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/LaunchServices.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:20,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/vulkan.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Authorization.h:193:7: error: variably modified 'bytes' at file scope
+  193 |  char bytes[kAuthorizationExternalFormLength];
+      |       ^~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:21,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/vulkan.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:391:15: error: expected identifier or '(' before '^' token
+  391 | typedef void (^CGPathApplyBlock)(const CGPathElement * element);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:393:53: error: unknown type name 'CGPathApplyBlock'
+  393 | CG_EXTERN void CGPathApplyWithBlock(CGPathRef path, CGPathApplyBlock CF_NOESCAPE block)
+      |                                                     ^~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:14,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/vulkan.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:103:15: error: expected identifier or '(' before '^' token
+  103 | typedef bool (^CGPDFArrayApplierBlock)(size_t index,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:113:5: error: unknown type name 'CGPDFArrayApplierBlock'
+  113 |     CGPDFArrayApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/vulkan.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:116:15: error: expected identifier or '(' before '^' token
+  116 | typedef bool (^CGPDFDictionaryApplierBlock)(const char * key,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:126:5: error: unknown type name 'CGPDFDictionaryApplierBlock'; did you mean 'CGPDFDictionaryApplierFunction'?
+  126 |     CGPDFDictionaryApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     CGPDFDictionaryApplierFunction
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/vulkan.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManager.h:379:27: error: expected ')' before '^' token
+  379 |  bool                    (^ _Nullable registrationHandler)(CFArrayRef errors, bool done) ) CT_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos, watchos, tvos);
+      |                           ^
+      |                           )
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h:20,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:47,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/vulkan.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:42:15: error: expected identifier or '(' before '^' token
+   42 | typedef void (^CGImageSourceAnimationBlock)(size_t index, CGImageRef image, bool* stop);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:50:107: error: unknown type name 'CGImageSourceAnimationBlock'
+   50 | IMAGEIO_EXTERN OSStatus CGAnimateImageAtURLWithBlock(CFURLRef url, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:58:108: error: unknown type name 'CGImageSourceAnimationBlock'
+   58 | IMAGEIO_EXTERN OSStatus CGAnimateImageDataWithBlock(CFDataRef data, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:31,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/vulkan.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDDevice.h:298:34: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  298 |                                  dispatch_block_t               handler)
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:35,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/vulkan.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDManager.h:295:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  295 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:36,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/vulkan.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDQueue.h:297:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  297 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+[4/126] /usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/context.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/context.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/context.c.o -c ../deps/glfw/src/context.c
+FAILED: deps/glfw/src/CMakeFiles/glfw.dir/context.c.o 
+/usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/context.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/context.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/context.c.o -c ../deps/glfw/src/context.c
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/AuthSession.h:32,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h:42,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/CSIdentity.h:43,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/OSServices.h:29,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/IconsCore.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/LaunchServices.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:20,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/context.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Authorization.h:193:7: error: variably modified 'bytes' at file scope
+  193 |  char bytes[kAuthorizationExternalFormLength];
+      |       ^~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:21,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/context.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:391:15: error: expected identifier or '(' before '^' token
+  391 | typedef void (^CGPathApplyBlock)(const CGPathElement * element);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:393:53: error: unknown type name 'CGPathApplyBlock'
+  393 | CG_EXTERN void CGPathApplyWithBlock(CGPathRef path, CGPathApplyBlock CF_NOESCAPE block)
+      |                                                     ^~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:14,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/context.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:103:15: error: expected identifier or '(' before '^' token
+  103 | typedef bool (^CGPDFArrayApplierBlock)(size_t index,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:113:5: error: unknown type name 'CGPDFArrayApplierBlock'
+  113 |     CGPDFArrayApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/context.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:116:15: error: expected identifier or '(' before '^' token
+  116 | typedef bool (^CGPDFDictionaryApplierBlock)(const char * key,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:126:5: error: unknown type name 'CGPDFDictionaryApplierBlock'; did you mean 'CGPDFDictionaryApplierFunction'?
+  126 |     CGPDFDictionaryApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     CGPDFDictionaryApplierFunction
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/context.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManager.h:379:27: error: expected ')' before '^' token
+  379 |  bool                    (^ _Nullable registrationHandler)(CFArrayRef errors, bool done) ) CT_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos, watchos, tvos);
+      |                           ^
+      |                           )
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h:20,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:47,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/context.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:42:15: error: expected identifier or '(' before '^' token
+   42 | typedef void (^CGImageSourceAnimationBlock)(size_t index, CGImageRef image, bool* stop);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:50:107: error: unknown type name 'CGImageSourceAnimationBlock'
+   50 | IMAGEIO_EXTERN OSStatus CGAnimateImageAtURLWithBlock(CFURLRef url, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:58:108: error: unknown type name 'CGImageSourceAnimationBlock'
+   58 | IMAGEIO_EXTERN OSStatus CGAnimateImageDataWithBlock(CFDataRef data, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:31,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/context.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDDevice.h:298:34: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  298 |                                  dispatch_block_t               handler)
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:35,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/context.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDManager.h:295:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  295 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:36,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/context.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDQueue.h:297:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  297 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+[5/126] /usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o -c ../deps/glfw/src/monitor.c
+FAILED: deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o 
+/usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o -c ../deps/glfw/src/monitor.c
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/AuthSession.h:32,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h:42,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/CSIdentity.h:43,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/OSServices.h:29,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/IconsCore.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/LaunchServices.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:20,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/monitor.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Authorization.h:193:7: error: variably modified 'bytes' at file scope
+  193 |  char bytes[kAuthorizationExternalFormLength];
+      |       ^~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:21,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/monitor.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:391:15: error: expected identifier or '(' before '^' token
+  391 | typedef void (^CGPathApplyBlock)(const CGPathElement * element);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:393:53: error: unknown type name 'CGPathApplyBlock'
+  393 | CG_EXTERN void CGPathApplyWithBlock(CGPathRef path, CGPathApplyBlock CF_NOESCAPE block)
+      |                                                     ^~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:14,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/monitor.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:103:15: error: expected identifier or '(' before '^' token
+  103 | typedef bool (^CGPDFArrayApplierBlock)(size_t index,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:113:5: error: unknown type name 'CGPDFArrayApplierBlock'
+  113 |     CGPDFArrayApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/monitor.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:116:15: error: expected identifier or '(' before '^' token
+  116 | typedef bool (^CGPDFDictionaryApplierBlock)(const char * key,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:126:5: error: unknown type name 'CGPDFDictionaryApplierBlock'; did you mean 'CGPDFDictionaryApplierFunction'?
+  126 |     CGPDFDictionaryApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     CGPDFDictionaryApplierFunction
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/monitor.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManager.h:379:27: error: expected ')' before '^' token
+  379 |  bool                    (^ _Nullable registrationHandler)(CFArrayRef errors, bool done) ) CT_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos, watchos, tvos);
+      |                           ^
+      |                           )
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h:20,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:47,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/monitor.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:42:15: error: expected identifier or '(' before '^' token
+   42 | typedef void (^CGImageSourceAnimationBlock)(size_t index, CGImageRef image, bool* stop);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:50:107: error: unknown type name 'CGImageSourceAnimationBlock'
+   50 | IMAGEIO_EXTERN OSStatus CGAnimateImageAtURLWithBlock(CFURLRef url, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:58:108: error: unknown type name 'CGImageSourceAnimationBlock'
+   58 | IMAGEIO_EXTERN OSStatus CGAnimateImageDataWithBlock(CFDataRef data, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:31,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/monitor.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDDevice.h:298:34: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  298 |                                  dispatch_block_t               handler)
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:35,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/monitor.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDManager.h:295:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  295 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:36,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/monitor.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDQueue.h:297:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  297 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+[6/126] /usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/init.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/init.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/init.c.o -c ../deps/glfw/src/init.c
+FAILED: deps/glfw/src/CMakeFiles/glfw.dir/init.c.o 
+/usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/init.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/init.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/init.c.o -c ../deps/glfw/src/init.c
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/AuthSession.h:32,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h:42,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/CSIdentity.h:43,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/OSServices.h:29,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/IconsCore.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/LaunchServices.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:20,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/init.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Authorization.h:193:7: error: variably modified 'bytes' at file scope
+  193 |  char bytes[kAuthorizationExternalFormLength];
+      |       ^~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:21,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/init.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:391:15: error: expected identifier or '(' before '^' token
+  391 | typedef void (^CGPathApplyBlock)(const CGPathElement * element);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:393:53: error: unknown type name 'CGPathApplyBlock'
+  393 | CG_EXTERN void CGPathApplyWithBlock(CGPathRef path, CGPathApplyBlock CF_NOESCAPE block)
+      |                                                     ^~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:14,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/init.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:103:15: error: expected identifier or '(' before '^' token
+  103 | typedef bool (^CGPDFArrayApplierBlock)(size_t index,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:113:5: error: unknown type name 'CGPDFArrayApplierBlock'
+  113 |     CGPDFArrayApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/init.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:116:15: error: expected identifier or '(' before '^' token
+  116 | typedef bool (^CGPDFDictionaryApplierBlock)(const char * key,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:126:5: error: unknown type name 'CGPDFDictionaryApplierBlock'; did you mean 'CGPDFDictionaryApplierFunction'?
+  126 |     CGPDFDictionaryApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     CGPDFDictionaryApplierFunction
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/init.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManager.h:379:27: error: expected ')' before '^' token
+  379 |  bool                    (^ _Nullable registrationHandler)(CFArrayRef errors, bool done) ) CT_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos, watchos, tvos);
+      |                           ^
+      |                           )
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h:20,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:47,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/init.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:42:15: error: expected identifier or '(' before '^' token
+   42 | typedef void (^CGImageSourceAnimationBlock)(size_t index, CGImageRef image, bool* stop);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:50:107: error: unknown type name 'CGImageSourceAnimationBlock'
+   50 | IMAGEIO_EXTERN OSStatus CGAnimateImageAtURLWithBlock(CFURLRef url, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:58:108: error: unknown type name 'CGImageSourceAnimationBlock'
+   58 | IMAGEIO_EXTERN OSStatus CGAnimateImageDataWithBlock(CFDataRef data, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:31,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/init.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDDevice.h:298:34: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  298 |                                  dispatch_block_t               handler)
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:35,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/init.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDManager.h:295:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  295 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:36,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/init.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDQueue.h:297:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  297 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+[7/126] /usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/input.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/input.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/input.c.o -c ../deps/glfw/src/input.c
+FAILED: deps/glfw/src/CMakeFiles/glfw.dir/input.c.o 
+/usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/input.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/input.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/input.c.o -c ../deps/glfw/src/input.c
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/AuthSession.h:32,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h:42,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/CSIdentity.h:43,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/OSServices.h:29,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/IconsCore.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/LaunchServices.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:20,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/input.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Authorization.h:193:7: error: variably modified 'bytes' at file scope
+  193 |  char bytes[kAuthorizationExternalFormLength];
+      |       ^~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:21,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/input.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:391:15: error: expected identifier or '(' before '^' token
+  391 | typedef void (^CGPathApplyBlock)(const CGPathElement * element);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:393:53: error: unknown type name 'CGPathApplyBlock'
+  393 | CG_EXTERN void CGPathApplyWithBlock(CGPathRef path, CGPathApplyBlock CF_NOESCAPE block)
+      |                                                     ^~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:14,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/input.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:103:15: error: expected identifier or '(' before '^' token
+  103 | typedef bool (^CGPDFArrayApplierBlock)(size_t index,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:113:5: error: unknown type name 'CGPDFArrayApplierBlock'
+  113 |     CGPDFArrayApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/input.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:116:15: error: expected identifier or '(' before '^' token
+  116 | typedef bool (^CGPDFDictionaryApplierBlock)(const char * key,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:126:5: error: unknown type name 'CGPDFDictionaryApplierBlock'; did you mean 'CGPDFDictionaryApplierFunction'?
+  126 |     CGPDFDictionaryApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     CGPDFDictionaryApplierFunction
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/input.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManager.h:379:27: error: expected ')' before '^' token
+  379 |  bool                    (^ _Nullable registrationHandler)(CFArrayRef errors, bool done) ) CT_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos, watchos, tvos);
+      |                           ^
+      |                           )
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h:20,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:47,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/input.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:42:15: error: expected identifier or '(' before '^' token
+   42 | typedef void (^CGImageSourceAnimationBlock)(size_t index, CGImageRef image, bool* stop);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:50:107: error: unknown type name 'CGImageSourceAnimationBlock'
+   50 | IMAGEIO_EXTERN OSStatus CGAnimateImageAtURLWithBlock(CFURLRef url, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:58:108: error: unknown type name 'CGImageSourceAnimationBlock'
+   58 | IMAGEIO_EXTERN OSStatus CGAnimateImageDataWithBlock(CFDataRef data, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:31,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/input.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDDevice.h:298:34: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  298 |                                  dispatch_block_t               handler)
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:35,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/input.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDManager.h:295:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  295 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:36,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/input.c:30:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDQueue.h:297:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  297 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+[8/126] /usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/window.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/window.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/window.c.o -c ../deps/glfw/src/window.c
+FAILED: deps/glfw/src/CMakeFiles/glfw.dir/window.c.o 
+/usr/local/bin/GCC-10 -D_GLFW_USE_CONFIG_H -I../deps/glfw/include -I../deps/glfw/src -Ideps/glfw/src -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -MD -MT deps/glfw/src/CMakeFiles/glfw.dir/window.c.o -MF deps/glfw/src/CMakeFiles/glfw.dir/window.c.o.d -o deps/glfw/src/CMakeFiles/glfw.dir/window.c.o -c ../deps/glfw/src/window.c
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/AuthSession.h:32,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h:42,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/CSIdentity.h:43,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/OSServices.h:29,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/IconsCore.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/LaunchServices.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:20,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/window.c:31:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Authorization.h:193:7: error: variably modified 'bytes' at file scope
+  193 |  char bytes[kAuthorizationExternalFormLength];
+      |       ^~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:21,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/window.c:31:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:391:15: error: expected identifier or '(' before '^' token
+  391 | typedef void (^CGPathApplyBlock)(const CGPathElement * element);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPath.h:393:53: error: unknown type name 'CGPathApplyBlock'
+  393 | CG_EXTERN void CGPathApplyWithBlock(CGPathRef path, CGPathApplyBlock CF_NOESCAPE block)
+      |                                                     ^~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:14,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/window.c:31:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:103:15: error: expected identifier or '(' before '^' token
+  103 | typedef bool (^CGPDFArrayApplierBlock)(size_t index,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFArray.h:113:5: error: unknown type name 'CGPDFArrayApplierBlock'
+  113 |     CGPDFArrayApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFPage.h:15,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h:16,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGContext.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBitmapContext.h:9,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:11,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:35,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/window.c:31:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:116:15: error: expected identifier or '(' before '^' token
+  116 | typedef bool (^CGPDFDictionaryApplierBlock)(const char * key,
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDictionary.h:126:5: error: unknown type name 'CGPDFDictionaryApplierBlock'; did you mean 'CGPDFDictionaryApplierFunction'?
+  126 |     CGPDFDictionaryApplierBlock cg_nullable block, void * __nullable info)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     CGPDFDictionaryApplierFunction
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.h:23,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:39,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/window.c:31:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManager.h:379:27: error: expected ')' before '^' token
+  379 |  bool                    (^ _Nullable registrationHandler)(CFArrayRef errors, bool done) ) CT_AVAILABLE(ios(13.0)) API_UNAVAILABLE(macos, watchos, tvos);
+      |                           ^
+      |                           )
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h:20,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:47,
+                 from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h:24,
+                 from ../deps/glfw/src/cocoa_platform.h:30,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/window.c:31:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:42:15: error: expected identifier or '(' before '^' token
+   42 | typedef void (^CGImageSourceAnimationBlock)(size_t index, CGImageRef image, bool* stop);
+      |               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:50:107: error: unknown type name 'CGImageSourceAnimationBlock'
+   50 | IMAGEIO_EXTERN OSStatus CGAnimateImageAtURLWithBlock(CFURLRef url, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h:58:108: error: unknown type name 'CGImageSourceAnimationBlock'
+   58 | IMAGEIO_EXTERN OSStatus CGAnimateImageDataWithBlock(CFDataRef data, CFDictionaryRef _iio_Nullable options, CGImageSourceAnimationBlock block) IMAGEIO_AVAILABLE_STARTING(10.15, 13.0);
+      |                                                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:31,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/window.c:31:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDDevice.h:298:34: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  298 |                                  dispatch_block_t               handler)
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:35,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/window.c:31:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDManager.h:295:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  295 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDLib.h:36,
+                 from ../deps/glfw/src/cocoa_joystick.h:29,
+                 from ../deps/glfw/src/cocoa_platform.h:86,
+                 from ../deps/glfw/src/internal.h:184,
+                 from ../deps/glfw/src/window.c:31:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDQueue.h:297:33: error: unknown type name 'dispatch_block_t'; did you mean 'dispatch_io_t'?
+  297 |                                 dispatch_block_t                handler)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 dispatch_io_t
+ninja: build stopped: subcommand failed.
